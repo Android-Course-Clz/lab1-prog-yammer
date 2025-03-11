@@ -81,28 +81,28 @@ class ProfileActivity : ComponentActivity() {
         posts.add(
             Post(
                 1,
-                "https://svinki.ru/media/original_images/s1200.jpg",
-                1,
-                1,
-                "eqwqewqwe",
+                "https://avatars.mds.yandex.net/i?id=8af7988be6a75f921d6f3ee6538a4b8a_l-10024022-images-thumbs&n=13",
+                2343,
+                330,
+                "Первый пост)",
             )
         )
         posts.add(
             Post(
                 2,
-                "https://svinki.ru/media/original_images/s1200.jpg",
-                1,
-                1,
-                "eqwqewqwe",
+                "https://i.pinimg.com/736x/09/92/f8/0992f834a3461611fb80775735c262a1.jpg",
+                8932,
+                219,
+                "Второй пост)",
             )
         )
         posts.add(
             Post(
                 3,
-                "https://svinki.ru/media/original_images/s1200.jpg",
-                1,
-                1,
-                "eqwqewqwe",
+                "https://cache3.youla.io/files/images/780_780/5e/d6/5ed66e95ccb633422a2c5092.jpg",
+                4497,
+                94,
+                "Третий пост)",
             )
         )
 

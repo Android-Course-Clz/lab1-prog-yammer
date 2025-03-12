@@ -1,5 +1,6 @@
 package ru.progyammer.mimo
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -28,6 +29,7 @@ class ProfileActivity : ComponentActivity() {
         val subscribeButton: Button = findViewById(R.id.subscribe_button)
         subscribeButton.setOnClickListener {
             subscribeButton.text = "Подписки"
+            subscribeButton.setTextColor(Color.GREEN)
             Toast.makeText(
                 this,
                 "Подписан)",

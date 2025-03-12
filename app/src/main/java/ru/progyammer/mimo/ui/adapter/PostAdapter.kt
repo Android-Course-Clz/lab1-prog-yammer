@@ -35,10 +35,20 @@ class PostAdapter(private var posts: List<Post>) : RecyclerView.Adapter<PostAdap
         holder.commentsCountView.text = post.commentsCount.toString()
         Glide.with(holder.itemView.context).load(post.photoUrl).into(holder.imageView)
 
+        var liked = false
+
         holder.likeButton.setOnClickListener {
-            holder.likeButton.setImageDrawable(ContextCompat.getDrawable(holder.itemView.context, R.drawable.ic_pressed_like))
-            ++post.likesCount
+            val iconRes = if (liked) {
+                --post.likesCount
+                R.drawable.ic_like
+            } else {
+                ++post.likesCount
+                R.drawable.ic_pressed_like
+            }
+
+            holder.likeButton.setImageDrawable(ContextCompat.getDrawable(holder.itemView.context, iconRes))
             holder.likesCountView.text = post.likesCount.toString()
+            liked = !liked
         }
 
         holder.commentButton.setOnClickListener {

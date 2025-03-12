@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mimo</string>
+    <string name="posts_count_label">публикац.</string>
+    <string name="subscribers_count_label">подписч.</string>
+    <string name="subscriptions_count_label">подписок</string>
+    <string name="subscribe_label">Подписаться</string>
+    <string name="message_label">Сообщение</string>
+</resources>
